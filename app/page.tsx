@@ -305,7 +305,7 @@ export default function HomePage() {
 
               <form
                   className="space-y-6"
-                  action="https://formsubmit.co/giovanna.esamcsantos@gmail.com"
+                  action="https://formsubmit.co/codedbygio@gmail.com"
                   method="POST"
               >
                 {/* Campo anti-spam (invisível) */}
