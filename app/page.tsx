@@ -43,32 +43,32 @@ export default function HomePage() {
 
   const services = [
     {
-      name: "Box Braids",
-      description: "Proteção e estilo duradouro com técnicas profissionais",
-      price: "A partir de R$ 180",
+      name: "Boho braids",
+      description: "Tranças com estilo leve e despojado, que misturam texturas, fios soltos e um toque boêmio autêntico.",
+      price: "A partir de R$ 410",
       duration: "4-6 horas",
-      image: "/images/trabalho-1.jpeg",
+      image: "/images/trabalho-7.jpeg",
     },
     {
-      name: "Twist",
-      description: "Leveza e movimento natural para todos os comprimentos",
-      price: "A partir de R$ 150",
+      name: "Nagô com cachos",
+      description: "Tranças rentes ao couro cabeludo com finalização em cachos soltos, unindo estilo, elegância e leveza",
+      price: "A partir de R$ 200",
       duration: "3-5 horas",
-      image: "/images/trabalho-2.jpeg",
+      image: "/images/trabalho-8.jpeg",
     },
     {
-      name: "Tranças Nagô",
-      description: "Elegância ancestral com padrões geométricos únicos",
-      price: "A partir de R$ 120",
+      name: "Rabo com Nagô",
+      description: "Tranças rentes ao couro cabeludo finalizadas em um rabo de cavalo, praticidade com um visual estiloso",
+      price: "A partir de R$ 190",
       duration: "2-4 horas",
       image: "/images/trabalho-5.jpeg",
     },
     {
-      name: "Alongamento",
-      description: "Volume e comprimento dos sonhos com fibras premium",
-      price: "A partir de R$ 200",
-      duration: "5-7 horas",
-      image: "/images/trabalho-4.jpeg",
+      name: "Nagô Masculina",
+      description: "Tranças rentes ao couro cabeludo com desenhos personalizados, unindo estilo, identidade e atitude",
+      price: "A partir de R$ 150",
+      duration: "2-3 horas",
+      image: "/images/trabalho-9.png",
     },
   ]
 
@@ -383,7 +383,7 @@ export default function HomePage() {
 
             <div className="flex space-x-4">
               <button
-                onClick={() => window.open("https://instagram.com/studioluaseziolink", "_blank")}
+                onClick={() => window.open("https://instagram.com/studioluasezio", "_blank")}
                 className="text-gray-400 hover:text-gray-600 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
