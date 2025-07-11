@@ -303,26 +303,41 @@ export default function HomePage() {
             <div className="bg-white rounded-2xl p-8 text-gray-900">
               <h3 className="text-2xl font-playfair font-bold mb-6">Solicitar Orçamento</h3>
 
-              <form className="space-y-6">
+              <form
+                  className="space-y-6"
+                  action="https://formsubmit.co/giovanna.esamcsantos@gmail.com"
+                  method="POST"
+              >
+                {/* Campo anti-spam (invisível) */}
+                <input type="text" name="_honey" style={{ display: 'none' }} />
+                {/* Desativa CAPTCHA */}
+                <input type="hidden" name="_captcha" value="false" />
+                {/* Redireciona para uma página de agradecimento */}
+                <input type="hidden" name="_next" value="/" />
+
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium mb-2">Nome</label>
-                    <Input placeholder="Seu nome" />
+                    <Input name="Nome" placeholder="Seu nome" required />
                   </div>
                   <div>
                     <label className="block text-sm font-medium mb-2">WhatsApp</label>
-                    <Input placeholder="(13) 99999-9999" />
+                    <Input name="WhatsApp" placeholder="(13) 99999-9999" required />
                   </div>
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium mb-2">E-mail</label>
-                  <Input type="email" placeholder="seu@email.com" />
+                  <Input name="Email" type="email" placeholder="seu@email.com" required />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium mb-2">Serviço</label>
-                  <select className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500">
+                  <select
+                      name="Serviço"
+                      required
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500"
+                  >
                     <option>Selecione o serviço</option>
                     <option>Box Braids</option>
                     <option>Twist</option>
@@ -333,11 +348,21 @@ export default function HomePage() {
 
                 <div>
                   <label className="block text-sm font-medium mb-2">Mensagem</label>
-                  <Textarea placeholder="Conte-nos sobre o penteado desejado..." className="min-h-[100px]" />
+                  <Textarea
+                      name="Mensagem"
+                      placeholder="Conte-nos sobre o penteado desejado..."
+                      className="min-h-[100px]"
+                  />
                 </div>
 
-                <Button className="w-full bg-studio-gold hover:bg-studio-terracotta text-white">Enviar Solicitação</Button>
+                <button
+                    type="submit"
+                    className="bg-amber-500 text-white px-6 py-2 rounded-md hover:bg-amber-600 transition"
+                >
+                  Enviar Solicitação
+                </button>
               </form>
+
             </div>
           </div>
         </div>
