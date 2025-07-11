@@ -313,7 +313,7 @@ export default function HomePage() {
                 {/* Desativa CAPTCHA */}
                 <input type="hidden" name="_captcha" value="false" />
                 {/* Redireciona para uma página de agradecimento */}
-                <input type="hidden" name="_next" value="/https://studioluasezio.vercel.app/agradecimento" />
+                <input type="hidden" name="_next" value="https://studioluasezio.vercel.app/agradecimento" />
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
