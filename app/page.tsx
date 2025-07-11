@@ -19,25 +19,25 @@ export default function HomePage() {
 
   const testimonials = [
     {
-      name: "Maria Silva",
-      text: "Simplesmente apaixonada pelo trabalho da Lua! Minhas tranças ficaram perfeitas e duraram muito tempo. Profissionalismo e carinho em cada detalhe.",
+      name: "Elaine Souza Dos Santos",
+      text: "Atendimento incrível, trabalho impecável! Nesse nível só temos ela aqui na baixada.",
+      rating: 5,
+      style: "Tiara Decorada",
+      image: "/images/trabalho-10.webp",
+    },
+    {
+      name: "Camila Fidelis",
+      text: "Trabalho incrível, impecável e super rápido, recomendo.",
       rating: 5,
       style: "Box Braids",
-      image: "/images/trabalho-1.jpeg",
+      image: "/images/trabalho-11.webp",
     },
     {
-      name: "Ana Carolina",
-      text: "Mais de 2 anos fazendo meu cabelo com a Lua e nunca me decepcionei. O cuidado com cada fio é impressionante. Saio sempre me sentindo uma rainha!",
+      name: "Victoria",
+      text: "Trabalho maravilhoso, atendimento sensacional e uma artista que ressalta nossa beleza e ajuda aumentar a alto estima.",
       rating: 5,
-      style: "Twist Loiro",
-      image: "/images/trabalho-2.jpeg",
-    },
-    {
-      name: "Juliana Santos",
-      text: "O ambiente é acolhedor e a técnica é incomparável. A Lua tem um dom especial para realçar nossa beleza natural. Recomendo de olhos fechados!",
-      rating: 5,
-      style: "Tranças Nagô",
-      image: "/images/trabalho-3.png",
+      style: "Tranças Lemonade",
+      image: "/images/trabalho-12.webp",
     },
   ]
 
@@ -118,9 +118,9 @@ export default function HomePage() {
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             {[
               { key: "todos", label: "Todos" },
-              { key: "box-braids", label: "Box Braids" },
-              { key: "twist", label: "Twist" },
-              { key: "nago", label: "Nagô" },
+              { key: "box-braids", label: "Nagô" },
+              { key: "twist", label: "Com cachos" },
+              { key: "nago", label: "Rabo" },
               { key: "tradicional", label: "Tradicionais" },
             ].map((filter) => (
               <Button
@@ -163,7 +163,7 @@ export default function HomePage() {
             <div className="bg-studio-gold rounded-2xl shadow-lg p-8 lg:p-12">
               <div className="grid lg:grid-cols-3 gap-8 items-center">
                 <div className="lg:col-span-1">
-                  <div className="w-24 h-24 rounded-full overflow-hidden mx-auto lg:mx-0">
+                  <div className="w-52 h-52 rounded-full overflow-hidden mx-auto lg:mx-0">
                     <Image
                       src={testimonials[currentTestimonial].image || "/placeholder.svg"}
                       alt={testimonials[currentTestimonial].name}
@@ -255,7 +255,7 @@ export default function HomePage() {
                   </div>
                   <div>
                     <div className="font-semibold">Telefone</div>
-                    <div className="text-black">(13) 99999-9999</div>
+                    <div className="text-black">(13) 99631-9655</div>
                   </div>
                 </div>
 
